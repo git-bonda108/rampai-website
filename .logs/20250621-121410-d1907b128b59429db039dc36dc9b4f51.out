@@ -1,0 +1,45 @@
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1278ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.8s (1197 modules)
+ GET / 200 in 4302ms
+ ✓ Compiled in 510ms (597 modules)
+ GET / 200 in 92ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 2.4s (1262 modules)
+ GET /training 200 in 2663ms
+ GET /consulting 200 in 2659ms
+ GET /contact 200 in 2660ms
+ GET /projects 200 in 2666ms
+ GET /about 200 in 2665ms
+ GET /contact?program=training 200 in 42ms
+ GET /contact?type=consultation 200 in 163ms
+ GET /contact?type=custom-training 200 in 162ms
+ GET /contact?service=Intelligent%20Cloud%20Cost%20Optimization 200 in 156ms
+ GET /contact?service=AI-Powered%20DevOps%20Automation 200 in 157ms
+ GET /contact?service=Code%20Quality%20Enhancement%20with%20AI 200 in 157ms
+ GET /projects 200 in 134ms
+ GET /about 200 in 136ms
+ GET /contact?service=Intelligent%20Cloud%20Cost%20Optimization 200 in 142ms
+ GET /contact?service=Code%20Quality%20Enhancement%20with%20AI 200 in 142ms
+ GET /contact?type=custom-training 200 in 142ms
+ GET /contact?service=AI-Powered%20DevOps%20Automation 200 in 142ms
+ GET /contact 200 in 143ms
+ GET /training 200 in 142ms
+ GET /contact?program=training 200 in 143ms
+ GET / 200 in 145ms
+ GET /consulting 200 in 28ms
+ GET /contact?type=consultation 200 in 34ms
+ GET / 200 in 31ms
+[?25h

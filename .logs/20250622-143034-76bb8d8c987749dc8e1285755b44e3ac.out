@@ -1,0 +1,31 @@
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1834ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.8s (1159 modules)
+ GET /apple-touch-icon.png 404 in 3360ms
+ GET /apple-touch-icon-precomposed.png 404 in 3300ms
+ ✓ Compiled in 511ms (587 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 747ms (1233 modules)
+ GET / 200 in 513ms
+ GET / 200 in 976ms
+ GET / 200 in 58ms
+ GET / 200 in 69ms
+ GET / 200 in 53ms
+ GET / 200 in 61ms
+ GET / 200 in 72ms
+ ○ Compiling /training ...
+ ✓ Compiled /training in 570ms (1210 modules)
+ ✓ Compiled /consulting in 339ms (1222 modules)
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 632ms (1237 modules)
+ ✓ Compiled / in 173ms (636 modules)
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 640ms (1238 modules)
+ ✓ Compiled / in 137ms (634 modules)

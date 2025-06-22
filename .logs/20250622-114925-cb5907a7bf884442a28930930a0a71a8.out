@@ -1,0 +1,41 @@
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1882ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.6s (1242 modules)
+ GET / 200 in 2682ms
+ GET / 200 in 3251ms
+ ✓ Compiled in 525ms (627 modules)
+ GET / 200 in 71ms
+ ✓ Compiled /_not-found in 444ms (1233 modules)
+ GET / 404 in 531ms
+ GET / 200 in 72ms
+ GET /_next/static/css/app/layout.css?v=1750593025807 404 in 22ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 20ms
+ GET /_next/static/chunks/app/layout.js 404 in 20ms
+ GET /_next/static/chunks/main-app.js?v=1750593025807 404 in 22ms
+ GET / 200 in 76ms
+ GET /_next/static/css/app/layout.css?v=1750593028336 404 in 19ms
+ GET /_next/static/chunks/main-app.js?v=1750593028336 404 in 20ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 21ms
+ GET /_next/static/chunks/app/page.js 404 in 20ms
+ GET /_next/static/chunks/app/layout.js 404 in 22ms
+ GET / 200 in 69ms
+ GET /_next/static/css/app/layout.css?v=1750593051525 404 in 17ms
+ GET / 200 in 46ms
+ GET /_next/static/chunks/main-app.js?v=1750593051525 404 in 23ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 17ms
+ GET /_next/static/chunks/app/layout.js 404 in 25ms
+ GET /_next/static/chunks/app/page.js 404 in 23ms
+ GET / 200 in 47ms
+ GET /_next/static/css/app/layout.css?v=1750593052993 404 in 18ms
+ GET /_next/static/chunks/main-app.js?v=1750593052993 404 in 25ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 17ms
+ GET /_next/static/chunks/app/page.js 404 in 20ms
+ GET /_next/static/chunks/app/layout.js 404 in 19ms
+[?25h

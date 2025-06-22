@@ -1,0 +1,109 @@
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ ./components/hero-section.tsx
+Error: 
+  [31mx[0m the name `Image` is defined multiple times
+    ,-[[36;1;4m/home/ubuntu/brewai-website/app/components/hero-section.tsx[0m:4:1]
+ [2m 4[0m | import React, { useEffect, useState } from 'react'
+ [2m 5[0m | import Link from 'next/link'
+ [2m 6[0m | import { motion } from 'framer-motion'
+ [2m 7[0m | import { ArrowRight, Bot, Brain, TrendingUp, Zap, Eye, Cog, BarChart3, Network, Trophy, Wrench, BookOpen, Calculator, Database, Target, Code, Layers, MessageSquare, Image, GitBranch, FileText, Settings } from 'lucide-react'
+    : [31;1m                                                                                                                                                                     ^^|^^[0m
+    :                                                                                                                                                                        [31;1m`-- [31;1mprevious definition of `Image` here[0m[0m
+ [2m 8[0m | import Image from 'next/image'
+    : [33;1m       ^^|^^[0m
+    :          [33;1m`-- [33;1m`Image` redefined here[0m[0m
+ [2m 9[0m | 
+ [2m10[0m | const HeroSection = () => {
+ [2m11[0m |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+    `----
+
+Import trace for requested module:
+./components/hero-section.tsx
+./app/page.tsx
+ ⨯ ./components/hero-section.tsx
+Error: 
+  [31mx[0m the name `Image` is defined multiple times
+    ,-[[36;1;4m/home/ubuntu/brewai-website/app/components/hero-section.tsx[0m:4:1]
+ [2m 4[0m | import React, { useEffect, useState } from 'react'
+ [2m 5[0m | import Link from 'next/link'
+ [2m 6[0m | import { motion } from 'framer-motion'
+ [2m 7[0m | import { ArrowRight, Bot, Brain, TrendingUp, Zap, Eye, Cog, BarChart3, Network, Trophy, Wrench, BookOpen, Calculator, Database, Target, Code, Layers, MessageSquare, Image, GitBranch, FileText, Settings } from 'lucide-react'
+    : [31;1m                                                                                                                                                                     ^^|^^[0m
+    :                                                                                                                                                                        [31;1m`-- [31;1mprevious definition of `Image` here[0m[0m
+ [2m 8[0m | import Image from 'next/image'
+    : [33;1m       ^^|^^[0m
+    :          [33;1m`-- [33;1m`Image` redefined here[0m[0m
+ [2m 9[0m | 
+ [2m10[0m | const HeroSection = () => {
+ [2m11[0m |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+    `----
+
+Import trace for requested module:
+./components/hero-section.tsx
+./app/page.tsx
+ ⨯ ./components/hero-section.tsx
+Error: 
+  [31mx[0m the name `Image` is defined multiple times
+    ,-[[36;1;4m/home/ubuntu/brewai-website/app/components/hero-section.tsx[0m:4:1]
+ [2m 4[0m | import React, { useEffect, useState } from 'react'
+ [2m 5[0m | import Link from 'next/link'
+ [2m 6[0m | import { motion } from 'framer-motion'
+ [2m 7[0m | import { ArrowRight, Bot, Brain, TrendingUp, Zap, Eye, Cog, BarChart3, Network, Trophy, Wrench, BookOpen, Calculator, Database, Target, Code, Layers, MessageSquare, Image, GitBranch, FileText, Settings } from 'lucide-react'
+    : [31;1m                                                                                                                                                                     ^^|^^[0m
+    :                                                                                                                                                                        [31;1m`-- [31;1mprevious definition of `Image` here[0m[0m
+ [2m 8[0m | import Image from 'next/image'
+    : [33;1m       ^^|^^[0m
+    :          [33;1m`-- [33;1m`Image` redefined here[0m[0m
+ [2m 9[0m | 
+ [2m10[0m | const HeroSection = () => {
+ [2m11[0m |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+    `----
+
+Import trace for requested module:
+./components/hero-section.tsx
+./app/page.tsx
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

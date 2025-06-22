@@ -1,0 +1,79 @@
+
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model TrainingProgram {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  industry    String // IT, Finance, Retail, Manufacturing, Healthcare
+  audience    String // Leaders, AI for Everyone, Technical Developers
+  duration    String
+  level       String // Beginner, Intermediate, Advanced
+  price       String
+  features    String[] // Array of key features
+  outcomes    String[] // Array of learning outcomes
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("training_programs")
+}
+
+model ConsultingService {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  industry    String
+  useCase     String
+  benefits    String[]
+  process     String[]
+  timeline    String
+  roi         String? // Expected ROI or success metrics
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("consulting_services")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  category    String // Generative AI, ML Frameworks, Agentic AI, Computer Vision, NLP
+  githubUrl   String
+  stars       Int
+  language    String
+  highlights  String[]
+  relevance   String // How this relates to BrewAI's expertise
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("projects")
+}
+
+model ContactInquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  industry  String?
+  message   String
+  type      String // consultation, training, general
+  status    String   @default("new") // new, contacted, qualified, converted
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_inquiries")
+}

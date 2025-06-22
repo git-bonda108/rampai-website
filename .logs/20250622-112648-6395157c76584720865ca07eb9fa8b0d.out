@@ -1,0 +1,39 @@
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1677ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3s (1242 modules)
+ GET / 200 in 3654ms
+ ✓ Compiled in 689ms (627 modules)
+ GET / 200 in 133ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 1361ms (1286 modules)
+ GET /about 200 in 1730ms
+ GET /training 200 in 1730ms
+ GET /projects 200 in 1726ms
+ GET /contact 200 in 1716ms
+ GET /consulting 200 in 1721ms
+ GET /contact?program=training 200 in 83ms
+ GET /contact?type=custom-training 200 in 193ms
+ GET /contact?service=AI-Powered%20DevOps%20Automation 200 in 175ms
+ GET /contact?service=Code%20Quality%20Enhancement%20with%20AI 200 in 172ms
+ GET /contact?service=Intelligent%20Cloud%20Cost%20Optimization 200 in 171ms
+ GET /contact?type=consultation 200 in 173ms
+ GET /contact?type=consultation 200 in 104ms
+ GET /contact?service=Intelligent%20Cloud%20Cost%20Optimization 200 in 104ms
+ GET /contact?type=custom-training 200 in 126ms
+ GET /contact 200 in 126ms
+ GET /contact?program=training 200 in 126ms
+ GET /contact?service=Code%20Quality%20Enhancement%20with%20AI 200 in 126ms
+ GET /contact?service=AI-Powered%20DevOps%20Automation 200 in 128ms
+ GET /training 200 in 170ms
+ GET /consulting 200 in 177ms
+ GET / 200 in 181ms
+ GET /projects 200 in 53ms
+ GET /about 200 in 79ms
+[?25h
