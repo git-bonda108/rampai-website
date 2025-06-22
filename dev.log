@@ -10,5 +10,7 @@
 
  ✓ Starting...
  ✓ Ready in 1787ms
- ✓ Compiled /api/contact in 450ms (58 modules)
+[?25h
+mpiled /api/contact in 450ms (58 modules)
  POST /api/contact 201 in 748ms
+[?25h
