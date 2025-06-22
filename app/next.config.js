@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: require('path').join(__dirname, '../'),
-  },
+  // REMOVED: output: 'standalone' - This is incompatible with Vercel deployment
+  // Standalone mode is for Docker/self-hosting, not Vercel
   eslint: {
     ignoreDuringBuilds: true,
   },
