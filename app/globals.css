@@ -1,0 +1,702 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.75rem;
+  
+  /* BrewAI Custom Properties - Updated with Turquoise Theme */
+  --navy-blue: #101585;
+  --mocha-mousse: #A47864;
+  --turquoise: #20B2AA;
+  --purple: #8A2BE2;
+  --grey: #c6c6c6;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 84% 4.9%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 94.1%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', sans-serif;
+}
+
+/* Enhanced Typography for Hero */
+.font-hero {
+  font-family: 'Orbitron', 'JetBrains Mono', monospace;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism utility classes */
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom gradient backgrounds - Updated with Turquoise */
+.gradient-bg {
+  background: linear-gradient(135deg, #101585 0%, #1e3a8a 50%, #A47864 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    rgba(16, 21, 133, 0.9) 0%, 
+    rgba(30, 58, 138, 0.8) 30%, 
+    rgba(164, 120, 100, 0.7) 70%, 
+    rgba(32, 178, 170, 0.6) 100%
+  );
+}
+
+.hero-gradient-turquoise {
+  background: linear-gradient(135deg, 
+    rgba(16, 21, 133, 0.9) 0%, 
+    rgba(30, 58, 138, 0.8) 30%, 
+    rgba(164, 120, 100, 0.7) 70%, 
+    rgba(32, 178, 170, 0.6) 100%
+  );
+}
+
+/* Enhanced Neural Network Styling */
+.neural-hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.neural-network-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.neural-network-layer {
+  transition: transform 0.4s ease-out;
+  will-change: transform;
+  /* Enhanced filters for maximum visibility on white background */
+}
+
+.neural-network-image {
+  mix-blend-mode: multiply;
+  filter: brightness(0.6) contrast(1.5) hue-rotate(15deg) saturate(1.3);
+}
+
+.neural-glow-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.neural-node {
+  position: relative;
+  will-change: transform, box-shadow;
+  transition: all 0.3s ease;
+}
+
+.neural-node::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, currentColor 0%, transparent 70%);
+  opacity: 0.3;
+  animation: neuralGlow 3s ease-in-out infinite;
+}
+
+.neural-connections {
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px rgba(32, 178, 170, 0.4)) drop-shadow(0 0 16px rgba(138, 43, 226, 0.3));
+  will-change: opacity;
+}
+
+.neural-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(32, 178, 170, 0.2);
+}
+
+.neural-card:hover {
+  border-color: rgba(32, 178, 170, 0.4);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(32, 178, 170, 0.2);
+}
+
+.neural-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.neural-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.neural-cta:hover::before {
+  left: 100%;
+}
+
+.neural-cta-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.neural-cta-secondary:hover {
+  border-color: rgba(32, 178, 170, 0.5);
+  box-shadow: 0 0 20px rgba(32, 178, 170, 0.3);
+}
+
+/* Enhanced Navigation Styling */
+.neural-icon-container {
+  position: relative;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { 
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Animation utilities - Enhanced with Neural Effects */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-glow-turquoise {
+  animation: glowTurquoise 2s ease-in-out infinite alternate;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+/* Neural-specific animations */
+.animate-neural-pulse {
+  animation: neuralPulse 2s ease-in-out infinite;
+}
+
+.animate-neural-pulse-delayed {
+  animation: neuralPulse 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.animate-neural-pulse-slow {
+  animation: neuralPulse 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-neural-breathe {
+  animation: neuralBreathe 4s ease-in-out infinite;
+}
+
+.animate-neural-breathe-delayed {
+  animation: neuralBreathe 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-neural-breathe-slow {
+  animation: neuralBreathe 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-neural-flow {
+  animation: neuralFlow 3s linear infinite;
+  stroke-dasharray: 10;
+}
+
+.animate-neural-flow-delayed {
+  animation: neuralFlow 3s linear infinite;
+  animation-delay: 1s;
+  stroke-dasharray: 15;
+}
+
+.animate-neural-flow-slow {
+  animation: neuralFlow 4s linear infinite;
+  animation-delay: 0.5s;
+  stroke-dasharray: 8;
+}
+
+/* Enhanced Tile Rolling Animations */
+.animate-tile-roll-right {
+  animation: tileRollRight 8s ease-in-out infinite;
+}
+
+.animate-tile-roll-left {
+  animation: tileRollLeft 8s ease-in-out infinite;
+}
+
+/* Stock Ticker Animations */
+.animate-ticker-right-to-left {
+  animation: tickerRightToLeft 30s linear infinite;
+}
+
+.animate-ticker-left-to-right {
+  animation: tickerLeftToRight 32s linear infinite;
+}
+
+@keyframes tileRollRight {
+  0%, 100% { 
+    transform: translateX(0px) rotate(0deg);
+  }
+  25% { 
+    transform: translateX(15px) rotate(1deg);
+  }
+  50% { 
+    transform: translateX(0px) rotate(0deg);
+  }
+  75% { 
+    transform: translateX(-15px) rotate(-1deg);
+  }
+}
+
+@keyframes tileRollLeft {
+  0%, 100% { 
+    transform: translateX(0px) rotate(0deg);
+  }
+  25% { 
+    transform: translateX(-15px) rotate(-1deg);
+  }
+  50% { 
+    transform: translateX(0px) rotate(0deg);
+  }
+  75% { 
+    transform: translateX(15px) rotate(1deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px rgba(32, 178, 170, 0.3); }
+  to { box-shadow: 0 0 30px rgba(32, 178, 170, 0.6); }
+}
+
+@keyframes glowTurquoise {
+  from { box-shadow: 0 0 20px rgba(32, 178, 170, 0.3); }
+  to { box-shadow: 0 0 30px rgba(32, 178, 170, 0.6); }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes neuralPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 
+      0 0 25px currentColor,
+      0 0 50px currentColor;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+    box-shadow: 
+      0 0 40px currentColor,
+      0 0 80px currentColor,
+      0 0 120px currentColor;
+  }
+}
+
+@keyframes neuralBreathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes neuralFlow {
+  0% {
+    stroke-dashoffset: 0;
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dashoffset: -60;
+    opacity: 0.4;
+  }
+}
+
+@keyframes neuralGlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8) rotate(0deg);
+  }
+  33% {
+    opacity: 0.4;
+    transform: scale(1.1) rotate(120deg);
+  }
+  66% {
+    opacity: 0.3;
+    transform: scale(0.9) rotate(240deg);
+  }
+}
+
+@keyframes neuralSpark {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Stock Ticker Keyframes */
+@keyframes tickerRightToLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tickerLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Custom scrollbar - Updated with Turquoise accent */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(164, 120, 100, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mocha-mousse);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B6B52;
+}
+
+/* Typography enhancements - Updated with Turquoise */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--navy-blue), var(--turquoise));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus styles for accessibility */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(32, 178, 170, 0.5);
+}
+
+/* Loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Responsive design helpers */
+.container-custom {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding: 0 2rem;
+  }
+}
+
+/* Rolling tile animations for RampAI */
+.rolling-tile {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.rolling-tile:hover {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(32, 178, 170, 0.2);
+}
+
+/* Enhanced rolling movement animation */
+@keyframes rollingTileLeft {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  25% { transform: translateX(2px) rotate(0.5deg); }
+  50% { transform: translateX(0px) rotate(0deg); }
+  75% { transform: translateX(-2px) rotate(-0.5deg); }
+}
+
+@keyframes rollingTileRight {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  25% { transform: translateX(-2px) rotate(-0.5deg); }
+  50% { transform: translateX(0px) rotate(0deg); }
+  75% { transform: translateX(2px) rotate(0.5deg); }
+}
+
+.animate-rolling-left {
+  animation: rollingTileLeft 4s ease-in-out infinite;
+}
+
+.animate-rolling-right {
+  animation: rollingTileRight 4s ease-in-out infinite;
+}
+
+/* Enhanced responsive design for neural effects */
+@media (max-width: 768px) {
+  .neural-network-layer {
+    transform: scale(1.5) !important;
+  }
+  
+  .neural-node {
+    width: 2px !important;
+    height: 2px !important;
+  }
+  
+  .neural-connections {
+    opacity: 0.3;
+  }
+  
+  /* Reduce rolling animation on mobile */
+  .rolling-tile {
+    animation-duration: 6s !important;
+  }
+  
+  /* Adjust hero text size on mobile */
+  .font-hero {
+    font-size: 3rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  /* Adjust tiles grid on mobile */
+  .hero-tiles-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  
+  .hero-tile {
+    padding: 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-hero {
+    font-size: 2.5rem !important;
+  }
+  
+  .hero-tiles-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Performance optimizations for animations */
+@media (prefers-reduced-motion: reduce) {
+  .animate-neural-pulse,
+  .animate-neural-pulse-delayed,
+  .animate-neural-pulse-slow,
+  .animate-neural-breathe,
+  .animate-neural-breathe-delayed,
+  .animate-neural-breathe-slow,
+  .animate-neural-flow,
+  .animate-neural-flow-delayed,
+  .animate-neural-flow-slow,
+  .animate-pulse-glow,
+  .animate-rolling-left,
+  .animate-rolling-right,
+  .animate-tile-roll-left,
+  .animate-tile-roll-right,
+  .rolling-tile {
+    animation: none;
+  }
+  
+  .neural-network-layer {
+    transform: none !important;
+  }
+}
+
+/* Enhanced tile styling */
+.hero-tile {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 178, 170, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-tile:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(32, 178, 170, 0.3);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(32, 178, 170, 0.15);
+}
+
+/* Text shadow for better contrast */
+.text-shadow-strong {
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
