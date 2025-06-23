@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build && echo 'Build completed. Checking for routes-manifest.json...' && ls -la .next/routes-manifest.json",
+    "build": "prisma generate && next build",
     "build:vercel": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
